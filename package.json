@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "build": "npx /vercel/path0/node_modules/webpack/bin/webpack.js"
+    "build": "npm run build"
   },
   "author": "Roshan",
   "license": "ISC",
@@ -19,8 +19,6 @@
   },
   "devDependencies": {
     "pug": "^2.0.4",
-    "pug-loader": "^2.4.0",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "pug-loader": "^2.4.0"
   }
 }

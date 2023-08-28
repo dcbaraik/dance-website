@@ -1,27 +1,27 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-//const fs = require("fs");
-const Mongooes = require('mongoose');
+
+
 const bodyparser = require("body-parser");
-const { default: mongoose } = require("mongoose");
+// const { default: mongoose } = require("mongoose");
 
 //Connect to MongoDB
-mongoose.connect('mongodb://localhost/contactDance',{usenewUrlParser: true});
+// mongoose.connect('mongodb://localhost/contactDance',{usenewUrlParser: true});
 
 const port = 8000;
 
 //Define Mongooes Schema
-const contactSchema = new mongoose.Schema({
-    name: String,
-    phone: String,
-    email: String,
-    address: String,
-    desc: String,
+// const contactSchema = new mongoose.Schema({
+//     name: String,
+//     phone: String,
+//     email: String,
+//     address: String,
+//     desc: String,
     
-  });
+//   });
 
-const contact = mongoose.model('contact', contactSchema);
+// const contact = mongoose.model('contact', contactSchema);
 
 //app.use(express.static('static',options))
 //Express Specific Stuff
